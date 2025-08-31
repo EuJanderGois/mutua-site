@@ -1,3 +1,4 @@
+import "./styles/reset.css";
 import "./styles/root.css";
 import mutuaLogo from "/logo-mutua.svg";
 import whatsapp from "/whatsapp.svg"
@@ -12,14 +13,14 @@ window.onload = () => {
       </a>
 
       <div class="side-r">
-        <nav class="navbar">
+        <div class="navbar">
           <a class="nav-button" href="/sobre">Sobre Nós</a>
           <a class="nav-button" href="/terapias">Terapias</a>
           <a class="nav-button" href="/atividades">Atividades</a>
           <a class="nav-button" href="/materiais">Materiais</a>
           <a class="nav-button" href="/cursos">Cursos</a>
           <a class="nav-button" href="/blog">Blog</a>
-        </nav>
+        </div>
 
         <a href="/" target="_self" class="whatsapp-button">
           <img src="${whatsapp}" class="whatsapp" alt="Fale Conosco" />

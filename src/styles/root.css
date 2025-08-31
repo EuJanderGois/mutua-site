@@ -1,16 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --whatsapp-display: block;
+    --navbar-display: flex;
+    --topbar-justify-content: space-between;
 }
+
+
 
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    min-width: 100vw;
+    min-height: 100dvh;
     height: auto;
-    max-width: 100vw;
+    width: 100dvw;
     overflow-x: hidden;
     background-color: #fafafa;
     color: #000;
@@ -23,7 +24,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: var(--topbar-justify-content);
     padding: 30px;
     background-color: #fff;
     position: fixed;
@@ -31,29 +32,28 @@ body {
     right: 0;
 }
 
-div .logo-container {
+.logo-container {
     width: auto;
 }
 
-nav .navbar {
-    display: flex;
+.navbar {
+    display: var(--navbar-display);
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-left: 160px;
-    min-width: 500px;
 
-    border: 1px solid red;
+    gap: clamp(10px, 2vw, 20px);
 }
 
 .nav-button {
     font-weight: 700;
-    font-size: 20px;
+    font-size: clamp(12px, 1.5vw, 18px);
     color: #286B98;
-    padding: 10px;
+    text-align: center;
+    white-space: nowrap;
 }
 
-div.side-r {
+.side-r {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -65,17 +65,12 @@ div.side-r {
 .whatsapp-button {
     width: auto;
     height: auto;
-    padding: 0 20px;
-}
-
-.slider-bg {
-    width: 100%;
-    height: auto;
-    display: block;
+    margin-left: 20px;
+    display: var(--whatsapp-display);
 }
 
 #slider {
-    padding: 75px 0;
+    padding: 125px 0;
     margin-top: 75px;
     background-image: url('/slider-bg.svg');
     background-size: cover;
@@ -92,20 +87,29 @@ div.side-r {
 .slider-title {
     color: #fff;
     font-weight: 700;
-    font-size: 68px;
-    line-height: 65px;
+    font-size: clamp(24px, 5vw, 65px);
+    line-height: 1.1;
     text-align: left;
-    padding: 20px;
 }
 
-ul,
-ul li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.logo {
+    width: clamp(150px, 20vw, 247px);
+    height: auto;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.whatsapp {
+    width: clamp(140px, 18vw, 218px);
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --whatsapp-display: none;
+        --navbar-display: none;
+        --topbar-justify-content: center;
+    }
 }
