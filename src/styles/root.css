@@ -1,10 +1,7 @@
 :root {
     --whatsapp-display: block;
-    --navbar-display: flex;
-    --topbar-justify-content: space-between;
+    --nav-display: flex;
 }
-
-
 
 body {
     display: flex;
@@ -18,14 +15,13 @@ body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-#topbar {
+header {
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: var(--topbar-justify-content);
-    padding: 30px;
+    justify-content: space-between;
+    padding: 30px 60px;
     background-color: #fff;
     position: fixed;
     left: 0;
@@ -36,9 +32,13 @@ body {
     width: auto;
 }
 
-.navbar {
-    display: var(--navbar-display);
-    flex-direction: row;
+.logo {
+    width: clamp(150px, 20vw, 247px);
+    height: auto;
+}
+
+nav {
+    display: var(--nav-display);
     align-items: center;
     justify-content: space-around;
 
@@ -92,11 +92,6 @@ body {
     text-align: left;
 }
 
-.logo {
-    width: clamp(150px, 20vw, 247px);
-    height: auto;
-}
-
 .whatsapp {
     width: clamp(140px, 18vw, 218px);
     height: auto;
@@ -109,7 +104,6 @@ body {
 @media screen and (max-width: 768px) {
     :root {
         --whatsapp-display: none;
-        --navbar-display: none;
-        --topbar-justify-content: center;
+        --nav-display: none;
     }
 }
