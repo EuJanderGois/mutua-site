@@ -1,0 +1,74 @@
+
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+    background-color: var(--bg-light);
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.logo-container {
+    width: auto;
+}
+
+.logo {
+    width: clamp(150px, 20vw, 247px);
+    height: auto;
+}
+
+nav {
+    display: var(--nav-display);
+    align-items: center;
+    justify-content: space-around;
+
+    gap: clamp(10px, 2vw, 20px);
+}
+
+.nav-button {
+    font-weight: 700;
+    font-size: clamp(16px, 1.5vw, 18px);
+    color: var(--text-blue);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.side-r {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+.whatsapp-button {
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+    display: var(--whatsapp-display);
+}
+
+.whatsapp {
+    width: clamp(140px, 18vw, 218px);
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 
+    quando a tela for menor que 768px 
+*/
+@media screen and (max-width: 768px) {
+    :root {
+        --whatsapp-display: none;
+        --nav-display: none;
+    }
+}

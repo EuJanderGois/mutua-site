@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    height: auto;
+    width: 100dvw;
+    overflow-x: hidden;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}

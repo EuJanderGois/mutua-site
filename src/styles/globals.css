@@ -1,0 +1,13 @@
+:root {
+    --text-dark: #000;
+    --text-light: #fff;
+    --text-blue: #286B98;
+    --bg-light: #fff;
+    --bg-blue: #69CEB8;
+
+    --whatsapp-display: block;
+    --nav-display: flex;
+}
+
+/* CSS RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; } ul, ul li { margin: 0; padding: 0; list-style: none; } a { text-decoration: none; color: inherit; }
