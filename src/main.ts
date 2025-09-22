@@ -3,6 +3,7 @@ import "./styles/globals.css";
 import "./styles/components/body.css";
 import "./styles/components/header.css";
 import "./styles/components/slider.css";
+import "./styles/components/about.css";
 
 
 window.onload = () => {

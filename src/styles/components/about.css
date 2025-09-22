@@ -1,0 +1,42 @@
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 4% 8%;
+    margin-top: 15px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    gap: 15px;
+}
+
+.about-title {
+    color: var(--text-dark-blue);
+    font-size: 62px;
+    line-height: 58px;
+}
+
+.about-description {
+    color: var(--text-gray);
+}
+
+.about-image {
+    width: 485px;
+    height: 300px;
+    box-shadow: -25px -25px 0px 1px var(--shadow-blue);
+    border-radius: 20px;
+}
+
+.about-button {
+    width: auto;
+    padding: 8px 15px;
+    background-color: var(--bg-green);
+}
