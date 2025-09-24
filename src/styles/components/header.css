@@ -2,7 +2,7 @@
 
 header {
     width: 100%;
-    height: auto;
+    height: var(--header-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,7 +19,7 @@ header {
 }
 
 .logo {
-    width: clamp(150px, 20vw, 247px);
+    width: clamp(150px, 20vw, 428px);
     height: auto;
 }
 
@@ -28,12 +28,12 @@ nav {
     align-items: center;
     justify-content: space-around;
 
-    gap: clamp(10px, 2vw, 20px);
+    gap: clamp(10px, 2vw, 40px);
 }
 
 .nav-button {
     font-weight: 700;
-    font-size: clamp(16px, 1.5vw, 18px);
+    font-size: clamp(16px, 1.5vw, 25px);
     color: var(--text-blue);
     text-align: center;
     white-space: nowrap;
@@ -49,14 +49,26 @@ nav {
 }
 
 .whatsapp-button {
-    width: auto;
+    min-width: 282px;
+    min-height: 56px;
     height: auto;
-    margin-left: 20px;
+    margin-left: 60px;
     display: var(--whatsapp-display);
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--bg-green);
+    border-radius: 30px;
+    padding: 8px;
+}
+
+.whatsapp-button .text {
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--text-light);
 }
 
 .whatsapp {
-    width: clamp(140px, 18vw, 218px);
+    width: 40px;
     height: auto;
 }
 

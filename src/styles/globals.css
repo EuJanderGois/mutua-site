@@ -9,8 +9,9 @@
     --bg-green: #52AF43;
     --shadow-blue: #54A8DB;
 
-    --whatsapp-display: block;
+    --whatsapp-display: flex;
     --nav-display: flex;
+    --header-height: 177px;
 }
 
 /* CSS RESET */
